@@ -37,8 +37,6 @@
 	changed = yellow bold
 	untracked = cyan bold
 	branch = yellow
-[core]
-	excludesfile = ~/.config/git/gitexcludes
 [push]
 	default = simple
 [credential]
