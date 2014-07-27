@@ -7,7 +7,7 @@ set fish_color_param normal
 set fish_color_quote green
 set fish_color_search_match --background=515151
 set fish_pager_color_prefix normal
-set fish_pager_color_completion green --bold
+set fish_pager_color_completion blue
 set fish_pager_color_description black
 
 # Atom
