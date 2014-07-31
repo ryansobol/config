@@ -7,26 +7,31 @@ function _is_git_dirty
 end
 
 function fish_prompt
-  set -l red (set_color red)
-  set -l blue (set_color blue)
-  set -l green (set_color green)
-  set -l normal (set_color normal)
-  set -l yellow (set_color yellow)
-  set -l magenta (set_color magenta)
-
-  set -l branch (_git_branch_name)
-  set -l prompt
-
-  if test -n $branch
-    if test -n (_is_git_dirty)
-      set prompt $red✗
-    else
-      set prompt $green✔
-    end
+  if test $status -eq 0
+    set_color $fish_color_cwd
   else
-    set prompt $magentaॐ
-    set branch "\b"
+    set_color $fish_color_error
   end
 
-  echo -ne $blue(prompt_pwd) $yellow$branch $prompt $normal
+  echo -n (prompt_pwd)
+
+  set -l branch (_git_branch_name)
+
+  if test -n $branch
+    set_color yellow
+    echo -n " $branch "
+
+    if test -n (_is_git_dirty)
+      set_color red
+      echo -n "✖ "
+    else
+      set_color green
+      echo -n "✔ "
+    end
+  else
+    set_color magenta
+    echo -n ' $ '
+  end
+
+  set_color normal
 end
