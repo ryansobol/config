@@ -1,3 +1,6 @@
+IRB.conf[:PROMPT_MODE] = :SIMPLE
+IRB.conf[:AUTO_INDENT] = true
+
 script_console_running = ENV.include?('RAILS_ENV') &&
                          IRB.conf[:LOAD_MODULES] &&
                          IRB.conf[:LOAD_MODULES].include?('console_with_helpers')
