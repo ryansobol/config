@@ -11,7 +11,7 @@
 	df = diff HEAD
 	dt = difftool HEAD
 	ll = log --pretty=format:'%Cred%h %>(11,trunc)%Cgreen%cr %<(10,trunc)%Cblue%cn%C(yellow)%d %Creset%s'
-	lp = log --patch --stat --pretty=format:'%C(bold red)%h %Cgreen%cr %Cblue%cn%C(yellow)%d %Creset%s'
+	la = log --patch --stat --pretty=format:'%C(bold red)%h %Cgreen%cr %Cblue%cn%C(yellow)%d %Creset%s'
 	up = !sh -c 'git fetch origin ${1-master} && git rebase origin/${1-master}' -
 	ir = !sh -c 'git rebase --interactive origin/${1-master}' -
 	dfs = diff --staged
