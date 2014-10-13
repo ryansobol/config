@@ -1,4 +1,18 @@
+function _find_project -a pattern
+  set -l paths $HOME/Projects/{2014,2013}
+  find $paths -type d -maxdepth 2 | ack --ignore-case --max-count=1 $pattern
+end
+
 function pd --description 'Change to a project directory'
-  set -l paths $HOME/Projects/{2014,2013,2012}
-  cd (find $paths -type d -maxdepth 2 | ack -i $argv[1] | ack -v Pods --max-count=1)
+  set -l project (_find_project "$argv[1]\$")
+
+  if test $status -eq 0
+    return (cd $project)
+  end
+
+  set -l project (_find_project $argv[1])
+
+  if test $status -eq 0
+    return (cd $project)
+  end
 end
