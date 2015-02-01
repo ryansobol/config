@@ -12,7 +12,7 @@ set fish_pager_color_completion blue
 set fish_pager_color_description black
 
 function _virtual_env_name
-  echo (basename "$VIRTUAL_ENV")
+  basename "$VIRTUAL_ENV"
 end
 
 function _git_branch_name
