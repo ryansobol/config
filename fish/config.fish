@@ -8,3 +8,4 @@ source /usr/local/share/chruby/auto.fish
 
 # virtualfish
 source ~/.virtualfish/virtual.fish
+source ~/.virtualfish/projects.fish
