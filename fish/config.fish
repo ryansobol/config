@@ -1,5 +1,5 @@
 # Atom
-set -gx EDITOR 'atom -wd'
+set -gx EDITOR 'atom -w'
 set -gx ATOM_REPOS_HOME /Projects/2014/ryansobol
 
 # chruby
