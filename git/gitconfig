@@ -9,7 +9,7 @@
 	co = checkout
 	br = branch
 	df = diff HEAD
-	ll = log --pretty=format:\"%Cred%h %>(11,trunc)%Cgreen%cr %<(10,trunc)%Cblue%cn%C(yellow)%d %Creset%s\"
+	ll = log --graph --all --pretty=format:\"%Cred%h %>(11,trunc)%Cgreen%cr %<(10,trunc)%Cblue%cn%C(yellow)%d %Creset%s\"
 	la = log --patch --stat --pretty=format:\"%C(bold red)%h %Cgreen%cr %Cblue%cn%C(yellow)%d %Creset%s\"
 	up = !sh -c 'git fetch origin ${1-master} && git rebase origin/${1-master}' -
 	ir = !sh -c 'git rebase --interactive origin/${1-master}' -
@@ -20,6 +20,7 @@
 	who = shortlog --numbered --summary --no-merges
 	done = !sh -c 'git fetch origin ${1-master} && git rebase origin/${1-master} && git checkout ${1-master} && git merge @{-1} && git push origin ${1-master}' -
 	cleanup = !git remote prune origin && git gc && git stash clear
+	cherry-pit = !sh -c 'git rebase -p --onto $1^ $1' -
 [color "branch"]
 	current = yellow reverse
 	local = yellow
