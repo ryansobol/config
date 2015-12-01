@@ -41,3 +41,5 @@
 	default = simple
 [credential]
 	helper = osxkeychain
+[branch "master"]
+	rebase = true
