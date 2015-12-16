@@ -1,15 +1,27 @@
 set fish_greeting
 
+set fish_color_autosuggestion 555 yellow
 set fish_color_command normal --bold
 set fish_color_comment black
+set fish_color_cwd blue
+set fish_color_cwd_root black
+set fish_color_error red --bold
+set fish_color_escape cyan
 set fish_color_history_current cyan
+set fish_color_match cyan
+set fish_color_normal normal
+set fish_color_operator cyan
 set fish_color_param normal
 set fish_color_quote green
+set fish_color_redirection cyan
 set fish_color_search_match --background=515151
-set fish_color_cwd blue
-set fish_pager_color_prefix normal
+set fish_color_selection --background=purple
+set fish_color_valid_path --underline
+
 set fish_pager_color_completion blue
 set fish_pager_color_description black
+set fish_pager_color_prefix normal
+set fish_pager_color_progress cyan
 
 function _virtual_env_name
   basename "$VIRTUAL_ENV"
@@ -25,7 +37,12 @@ end
 
 function fish_prompt
   if test $status -eq 0
-    set_color $fish_color_cwd
+    switch $USER
+    case root toor
+      set_color $fish_color_cwd_root
+    case '*'
+      set_color $fish_color_cwd
+    end
   else
     set_color $fish_color_error
   end
@@ -54,7 +71,13 @@ function fish_prompt
     end
   else
     set_color magenta
-    echo -n '$ '
+
+    switch $USER
+    case root toor
+      echo -n '# '
+    case '*'
+      echo -n '$ '
+    end
   end
 
   set_color normal
