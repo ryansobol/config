@@ -4,15 +4,14 @@ function _find_project -a pattern
 end
 
 function pd --description 'Change to a project directory'
-  set -l project (_find_project "$argv[1]\$")
+  set -l dir $argv[1]
+  set -l patterns "/$dir\$" "$dir\$" $dir
 
-  if test $status -eq 0
-    return (cd $project)
-  end
+  for pattern in $patterns
+    set -l project (_find_project $pattern)
 
-  set -l project (_find_project $argv[1])
-
-  if test $status -eq 0
-    return (cd $project)
+    if test $status -eq 0
+      return (cd $project)
+    end
   end
 end
