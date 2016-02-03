@@ -21,6 +21,7 @@
 	done = !sh -c 'git fetch origin ${1-master} && git rebase origin/${1-master} && git checkout ${1-master} && git merge @{-1} && git push origin ${1-master}' -
 	cleanup = !git remote prune origin && git gc && git stash clear
 	cherry-pit = !sh -c 'git rebase -p --onto $1^ $1' -
+	unadd = reset HEAD --
 [color "branch"]
 	current = yellow reverse
 	local = yellow
