@@ -23,10 +23,6 @@ set fish_pager_color_description black
 set fish_pager_color_prefix normal
 set fish_pager_color_progress cyan
 
-function _virtual_env_name
-  basename "$VIRTUAL_ENV"
-end
-
 function _git_branch_name
   echo (git symbolic-ref --short HEAD ^/dev/null)
 end
@@ -37,24 +33,12 @@ end
 
 function fish_prompt
   if test $status -eq 0
-    switch $USER
-    case root toor
-      set_color $fish_color_cwd_root
-    case '*'
-      set_color $fish_color_cwd
-    end
+    set_color $fish_color_cwd
   else
     set_color $fish_color_error
   end
 
   echo -ns (prompt_pwd) " "
-
-  set -l virtual_env (_virtual_env_name)
-
-  if test -n $virtual_env
-    set_color green
-    echo -n "$virtual_env "
-  end
 
   set -l branch (_git_branch_name)
 
@@ -71,13 +55,7 @@ function fish_prompt
     end
   else
     set_color magenta
-
-    switch $USER
-    case root toor
-      echo -n '# '
-    case '*'
-      echo -n '$ '
-    end
+    echo -n '$ '
   end
 
   set_color normal
