@@ -44,3 +44,5 @@
 	helper = osxkeychain
 [branch "master"]
 	rebase = true
+[core]
+	excludesfile = /Users/ryansobol/.config/git/ignore
