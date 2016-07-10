@@ -13,7 +13,6 @@
 	ir = !sh -c 'git rebase --interactive ${1-master}' -
 	dfs = diff --staged
 	ign = ls-files --others --ignored --exclude-standard
-	rmb = !sh -c \"git branch -D $1 && git push origin :$1\" -
 	unc = reset HEAD^
 	who = shortlog --numbered --summary --no-merges
 	done = !sh -c 'git checkout ${2-master} && git merge @{-1} && git push ${1-origin} ${2-master}' -
