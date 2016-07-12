@@ -37,3 +37,9 @@
 'body':
   'ctrl-alt-cmd-right': 'window:focus-next-pane'
   'ctrl-alt-cmd-left': 'window:focus-previous-pane'
+
+'atom-text-editor':
+  'ctrl-cmd-left': 'editor:move-to-previous-subword-boundary'
+  'ctrl-cmd-right': 'editor:move-to-next-subword-boundary'
+  'ctrl-cmd-shift-left': 'editor:select-to-previous-subword-boundary'
+  'ctrl-cmd-shift-right': 'editor:select-to-next-subword-boundary'
