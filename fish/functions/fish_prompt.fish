@@ -35,7 +35,7 @@ function fish_prompt
   if test $status -eq 0
     set_color $fish_color_cwd
   else
-    set_color $fish_color_error
+    set_color red
   end
 
   echo -ns (prompt_pwd) " "
