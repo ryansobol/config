@@ -2,6 +2,9 @@
 export EDITOR='atom -w'
 export ATOM_REPOS_HOME=/Projects/2014/ryansobol
 
+# bash
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
 # cd
 alias ..='cd ..'
 
@@ -12,6 +15,7 @@ if [[ -n $(which exa) ]]; then
 fi
 
 # ls
+alias ls='ls -G'
 alias ll='ls -hl'
 alias la='ls -hal'
 
