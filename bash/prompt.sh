@@ -9,12 +9,12 @@ _is_git_staging_area_dirty() {
 _git_branch_prompt() {
   local last_exit_code=$?
 
-  local blue='\e[0;34m'
-  local green='\e[0;32m'
-  local purple='\e[0;35m'
-  local red='\e[0;31m'
-  local reset='\e[0;0m'
-  local yellow='\e[0;33m'
+  local blue='\[\e[0;34m\]'
+  local green='\[\e[0;32m\]'
+  local purple='\[\e[0;35m\]'
+  local red='\[\e[0;31m\]'
+  local reset='\[\e[0;0m\]'
+  local yellow='\[\e[0;33m\]'
 
   if [[ $last_exit_code -eq 0 ]]; then
     PS1="$blue"
