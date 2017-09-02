@@ -3,10 +3,12 @@ export EDITOR='atom -w'
 export ATOM_REPOS_HOME=/Projects/2014/ryansobol
 
 # bash
-[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+if [[ -f /usr/local/etc/bash_completion ]]; then
+  source /usr/local/etc/bash_completion
+fi
 
 # cd
-alias ..='cd ..'
+shopt -s autocd
 
 # exa
 if [[ -n $(which exa) ]]; then
