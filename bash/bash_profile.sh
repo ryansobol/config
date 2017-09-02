@@ -1,8 +1,8 @@
-# Atom
+# atom
 export EDITOR='atom -w'
 export ATOM_REPOS_HOME=/Projects/2014/ryansobol
 
-# bash
+# bash-completion
 if [[ -f /usr/local/etc/bash_completion ]]; then
   source /usr/local/etc/bash_completion
 fi
@@ -21,5 +21,5 @@ alias ls='ls -G'
 alias ll='ls -hl'
 alias la='ls -hal'
 
-# PS1
+# prompt
 source ~/.config/bash/prompt.sh
