@@ -1,6 +1,6 @@
 [user]
 	name = Ryan Sobol
-	email = contact@ryansobol.com
+	email = hello@ryansobol.com
 [alias]
 	c = commit -m
 	st = status --short --branch
