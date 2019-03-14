@@ -1,5 +1,5 @@
 # atom
-export EDITOR='atom -w'
+# export EDITOR='atom -w'
 export ATOM_REPOS_HOME=/Projects/2014/ryansobol
 
 # bash-completion
