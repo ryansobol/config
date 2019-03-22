@@ -37,13 +37,11 @@
 	changed = yellow bold
 	untracked = cyan bold
 	branch = yellow
+[pull]
+	rebase = true
 [push]
 	default = simple
 [credential]
 	helper = osxkeychain
-[branch "master"]
-	rebase = true
 [core]
 	excludesfile = /Users/ryansobol/.config/git/ignore
-[branch "ryansobol"]
-	rebase = true
