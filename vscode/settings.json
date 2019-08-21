@@ -1,0 +1,43 @@
+{
+  "editor.fontSize": 18,
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "editor.tabSize": 2,
+  "workbench.colorTheme": "Tomorrow Night Eighties",
+  "atomKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": true,
+  "editor.minimap.enabled": false,
+  "window.zoomLevel": 1,
+  "explorer.confirmDragAndDrop": false,
+  "files.autoSave": "onFocusChange",
+  "java.import.exclusions": [],
+  "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/ryansobol/.vscode/extensions/gabrielbb.vscode-lombok-0.9.8/server/lombok.jar\"",
+  "json.format.enable": false,
+  "editor.wordWrapColumn": 100,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "terraform.telemetry.enabled": false,
+  "editor.rulers": [
+    100
+  ],
+  "terminal.integrated.fontSize": 16,
+  "java.errors.incompleteClasspath.severity": "ignore",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "liveshare.featureSet": "insiders",
+  "files.trimTrailingWhitespace": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.hidesExplorerArrows": true,
+  "material-icon-theme.folders.theme": "classic",
+  "explorer.openEditors.visible": 0,
+  "diffEditor.renderSideBySide": false
+}
