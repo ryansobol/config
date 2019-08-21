@@ -1,5 +1,4 @@
 # Atom
-# set -x EDITOR 'atom -w'
 set -x ATOM_REPOS_HOME /Projects/2014/ryansobol
 
 # exa
