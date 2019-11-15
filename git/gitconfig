@@ -5,6 +5,7 @@
 	c = commit -m
 	st = status --short --branch
 	ca = commit --amend --reuse-message=HEAD
+	ce = commit --allow-empty -m
 	co = checkout
 	br = branch
 	df = diff HEAD
