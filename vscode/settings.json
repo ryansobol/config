@@ -11,7 +11,7 @@
   "explorer.confirmDragAndDrop": false,
   "files.autoSave": "onFocusChange",
   "java.import.exclusions": [],
-  "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/ryansobol/.vscode/extensions/gabrielbb.vscode-lombok-0.9.8/server/lombok.jar\"",
+  "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/ryansobol/.vscode/extensions/gabrielbb.vscode-lombok-0.9.9/server/lombok.jar\"",
   "json.format.enable": false,
   "editor.wordWrapColumn": 100,
   "files.insertFinalNewline": true,
@@ -39,5 +39,8 @@
   "material-icon-theme.hidesExplorerArrows": true,
   "material-icon-theme.folders.theme": "classic",
   "explorer.openEditors.visible": 0,
-  "diffEditor.renderSideBySide": false
+  "diffEditor.renderSideBySide": false,
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
+  "go.buildOnSave": "off"
 }
