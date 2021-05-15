@@ -46,3 +46,5 @@
 	helper = osxkeychain
 [core]
 	excludesfile = /Users/ryansobol/.config/git/ignore
+[init]
+	defaultBranch = main
