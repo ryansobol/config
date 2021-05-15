@@ -1,11 +1,9 @@
 {
-  "editor.fontSize": 18,
-  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 15,
+  "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.tabSize": 2,
-  "workbench.colorTheme": "Tomorrow Night Eighties",
   "atomKeymap.promptV3Features": true,
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.formatOnPaste": true,
   "editor.minimap.enabled": false,
   "window.zoomLevel": 1,
   "explorer.confirmDragAndDrop": false,
@@ -13,7 +11,7 @@
   "java.import.exclusions": [],
   "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/ryansobol/.vscode/extensions/gabrielbb.vscode-lombok-0.9.9/server/lombok.jar\"",
   "json.format.enable": false,
-  "editor.wordWrapColumn": 100,
+  "editor.wordWrapColumn": 88,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "telemetry.enableTelemetry": false,
@@ -42,5 +40,17 @@
   "diffEditor.renderSideBySide": false,
   "go.formatTool": "goimports",
   "go.useLanguageServer": true,
-  "go.buildOnSave": "off"
+  "go.buildOnSave": "off",
+  "python.jediEnabled": false,
+  "workbench.colorTheme": "Tomorrow Night Eighties",
+  "editor.renderWhitespace": "boundary",
+  "editor.formatOnPaste": true,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+],
+"python.languageServer": "Microsoft",
+"python.defaultInterpreterPath": "/usr/local/bin/python3"
 }
