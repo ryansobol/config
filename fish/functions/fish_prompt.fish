@@ -24,11 +24,11 @@ set fish_pager_color_prefix normal
 set fish_pager_color_progress cyan
 
 function _git_branch_name
-  echo (git symbolic-ref --short HEAD ^/dev/null)
+  echo (git symbolic-ref --short HEAD 2>/dev/null)
 end
 
 function _is_git_dirty
-  echo (git status --short --ignore-submodules=dirty ^/dev/null)
+  echo (git status --short --ignore-submodules=dirty 2>/dev/null)
 end
 
 function fish_prompt
