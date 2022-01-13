@@ -1,5 +1,5 @@
 function _find_project -a pattern
-  set -l paths $HOME/Projects/{2021,2020}
+  set -l paths $HOME/Projects/{2022,2021}
   find $paths -type d -maxdepth 2 | ack --ignore-case -1 $pattern
 end
 
