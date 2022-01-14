@@ -9,7 +9,7 @@ if command --query fzf
   # fzf.fisher
   fzf_configure_bindings --directory=\cf --git_log=\cl --git_status=\cs
 
-  set fzf_fd_opts --exclude=Documents --exclude=Library
+  set fzf_fd_opts --follow --hidden --exclude=Documents --exclude=Library --exclude=.git
   set fzf_preview_dir_cmd exa --all --color=always
 
   # fzf
