@@ -54,7 +54,7 @@ function fish_prompt
       echo -n "✔ "
     end
   else
-    set_color black
+    set_color brblack
     echo -n '❯ '
   end
 
