@@ -1,3 +1,7 @@
+set -g hydro_color_pwd blue
+set -g hydro_color_git yellow
+set -g hydro_color_prompt brblack
+
 # exa
 if command --query exa
   alias ls exa
@@ -20,6 +24,7 @@ end
 if command --query bat
   alias cat bat
 end
+
 
 # terraform
 # if command --query docker
