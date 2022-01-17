@@ -1,4 +1,4 @@
-function trash --description 'Move files to the Finder Trash'
+function trash --description='Move files to the macOS trash'
   set -l trash_path $HOME/.Trash
 
   for arg in $argv
