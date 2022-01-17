@@ -1,9 +1,3 @@
-# exa
-if command --query exa
-  alias ls exa
-  alias tree "exa -T"
-end
-
 # fzf and fzf.fisher
 if command --query fzf
   # fzf.fisher
@@ -15,12 +9,6 @@ if command --query fzf
   # fzf
   set -x FZF_DEFAULT_COMMAND "fd --type f $fzf_fd_opts"
 end
-
-# bat
-if command --query bat
-  alias cat bat
-end
-
 
 # terraform
 # if command --query docker
