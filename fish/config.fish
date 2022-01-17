@@ -17,17 +17,6 @@ fish_add_path -g /usr/local/opt/python@3.9/bin
 fish_add_path -g /usr/local/opt/python@3.10/bin
 fish_add_path -g /usr/local/opt/python@3.10/libexec/bin
 
-# pyenv
-# set -x PYENV_ROOT $HOME/.pyenv
-# set -g fish_user_paths $PYENV_ROOT/bin $fish_user_paths
-# status is-login; and pyenv init --path | source
-# status is-interactive; and pyenv init - | source
-
-# compiling python 3.6.15 using pyenv
-# set -gx LDFLAGS "-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib -L/usr/local/opt/openssl@1.1/lib -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib"
-# set -gx CPPFLAGS "-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include -I/usr/local/opt/openssl@1.1/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"
-# set -gx CFLAGS "-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include -I/usr/local/opt/openssl@1.1/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"
-
 # tsk-website
 set -x DJANGO_VIMEO_API_TOKEN ...
 set -x DJANGO_VIMEO_API_SECRET ...
