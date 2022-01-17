@@ -10,11 +10,6 @@ if command --query fzf
   set -x FZF_DEFAULT_COMMAND "fd --type f $fzf_fd_opts"
 end
 
-# terraform
-# if command --query docker
-#   alias terraform="docker run -it -v $PWD:/app -w /app hashicorp/terraform:0.12.1"
-# end
-
 # brew python@3.9
 fish_add_path -g /usr/local/opt/python@3.9/bin
 
