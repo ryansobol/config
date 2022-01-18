@@ -45,8 +45,8 @@ function fish_prompt
     echo -n "$branch "
 
     if test -n (_is_git_dirty)
-      set_color red
-      echo -n "✖ "
+      set_color red --bold
+      echo -n "× "
     else
       set_color green --bold
       echo -n "✓ "
