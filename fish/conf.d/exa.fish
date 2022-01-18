@@ -5,3 +5,5 @@ end
 function _exa_uninstall --on-event exa_uninstall
   brew uninstall exa
 end
+
+set --global fzf_preview_dir_cmd exa --all --color=always
