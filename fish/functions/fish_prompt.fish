@@ -48,8 +48,8 @@ function fish_prompt
       set_color red
       echo -n "✖ "
     else
-      set_color green
-      echo -n "✔ "
+      set_color green --bold
+      echo -n "✓ "
     end
   else
     set_color $fish_color_command
