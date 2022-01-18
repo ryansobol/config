@@ -1,10 +1,8 @@
-set fish_greeting
-
 set fish_color_autosuggestion 555 yellow
 set fish_color_command normal --bold
 set fish_color_comment black
 set fish_color_cwd blue
-set fish_color_cwd_root black
+set fish_color_cwd_root brblack
 set fish_color_error red --bold
 set fish_color_escape cyan
 set fish_color_history_current cyan
@@ -18,10 +16,10 @@ set fish_color_search_match --background=515151
 set fish_color_selection --background=purple
 set fish_color_valid_path --underline
 
-set fish_pager_color_completion blue
-set fish_pager_color_description black
+set fish_pager_color_completion cyan
+set fish_pager_color_description normal
 set fish_pager_color_prefix normal
-set fish_pager_color_progress cyan
+set fish_pager_color_progress yellow
 
 function _git_branch_name
   echo (git symbolic-ref --short HEAD 2>/dev/null)
@@ -54,7 +52,7 @@ function fish_prompt
       echo -n "✔ "
     end
   else
-    set_color brblack
+    set_color $fish_color_command
     echo -n '❯ '
   end
 
