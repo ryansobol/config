@@ -9,10 +9,3 @@ if command --query fzf
   # fzf
   set -x FZF_DEFAULT_COMMAND "fd --type f $fzf_fd_opts"
 end
-
-# brew python@3.9
-fish_add_path -g /usr/local/opt/python@3.9/bin
-
-# brew python@3.10
-fish_add_path -g /usr/local/opt/python@3.10/bin
-fish_add_path -g /usr/local/opt/python@3.10/libexec/bin
