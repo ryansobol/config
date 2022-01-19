@@ -3,6 +3,7 @@ set fish_color_command normal --bold
 set fish_color_comment black
 set fish_color_cwd blue
 set fish_color_cwd_root brblack
+set fish_color_end yellow
 set fish_color_error red --bold
 set fish_color_escape cyan
 set fish_color_history_current cyan
