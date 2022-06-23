@@ -33,7 +33,7 @@ function colorpanels --description="Print a colorized panel for each color in th
 
   echo
 
-    for color in $colors
+  for color in $colors
     set_color "br"$color
     echo -n " "▀▀▀▀"  "
   end
