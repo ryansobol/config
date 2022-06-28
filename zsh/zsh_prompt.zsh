@@ -24,7 +24,7 @@ _git_branch_prompt() {
   then
     PROMPT="$PROMPT%F{yellow}$branch "
 
-    if [[ -n $(_is_git_dirty)]]
+    if [[ -n $(_is_git_dirty) ]]
     then
       PROMPT="$PROMPT%F{red}%B×%b%f "
     else
