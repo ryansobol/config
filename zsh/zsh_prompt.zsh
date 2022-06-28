@@ -9,8 +9,7 @@ _is_git_dirty() {
 _git_branch_prompt() {
   local last_exit_code=$?
 
-  if [[ $last_exit_code -eq 0 ]]
-  then
+  if [[ $last_exit_code -eq 0 ]]; then
     PROMPT="%F{blue}"
   else
     PROMPT="%F{red}"
@@ -20,12 +19,10 @@ _git_branch_prompt() {
 
   local branch=$(_git_branch_name)
 
-  if [[ -n $branch ]]
-  then
+  if [[ -n $branch ]]; then
     PROMPT="$PROMPT%F{yellow}$branch "
 
-    if [[ -n $(_is_git_dirty) ]]
-    then
+    if [[ -n $(_is_git_dirty) ]]; then
       PROMPT="$PROMPT%F{red}%B×%b%f "
     else
       PROMPT="$PROMPT%F{green}%B✓%b%f "
