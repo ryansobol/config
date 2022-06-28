@@ -1,9 +1,9 @@
 _git_branch_name() {
-  echo $(git symbolic-ref --short HEAD 2>/dev/null)
+  git symbolic-ref --short HEAD 2>/dev/null
 }
 
 _is_git_dirty() {
-  echo $(git status --short --ignore-submodules=dirty 2>/dev/null)
+  git status --short --ignore-submodules=dirty 2>/dev/null
 }
 
 _git_branch_prompt() {
