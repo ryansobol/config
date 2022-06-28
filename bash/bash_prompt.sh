@@ -1,8 +1,8 @@
-_get_current_git_branch() {
+_git_branch_name() {
   git symbolic-ref --short HEAD 2> /dev/null
 }
 
-_is_git_staging_area_dirty() {
+_is_git_dirty() {
   git status --short --ignore-submodules=dirty 2> /dev/null
 }
 
@@ -24,18 +24,18 @@ _git_branch_prompt() {
 
   PS1="$PS1\w"
 
-  local branch=$(_get_current_git_branch)
+  local branch=$(_git_branch_name)
 
   if [[ -n $branch ]]; then
     PS1="$PS1$yellow $branch"
 
-    if [[ -n $(_is_git_staging_area_dirty) ]]; then
-      PS1="$PS1$red ✖"
+    if [[ -n $(_is_git_dirty) ]]; then
+      PS1="$PS1$red ×"
     else
-      PS1="$PS1$green ✔"
+      PS1="$PS1$green ✓"
     fi
   else
-    PS1="$PS1$purple \$"
+    PS1="$PS1$reset ❯ "
   fi
 
   PS1="$PS1$reset "

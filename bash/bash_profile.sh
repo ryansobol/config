@@ -22,4 +22,4 @@ alias ll='ls -hl'
 alias la='ls -hal'
 
 # prompt
-source ~/.config/bash/prompt.sh
+source ~/.config/bash/bash_prompt.sh
