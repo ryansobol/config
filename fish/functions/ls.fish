@@ -1,5 +1,5 @@
-if command --query exa
-  function ls --description='List contents of directory' --wraps=exa
-    exa $argv
+if command --query eza
+  function ls --description='List contents of directory' --wraps=eza
+    eza $argv
   end
 end

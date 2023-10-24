@@ -11,9 +11,9 @@ fi
 shopt -s autocd
 
 # exa
-if [[ -n $(which exa) ]]; then
+if [[ -n $(which eza) ]]; then
   alias ls=exa
-  alias tree='exa -T'
+  alias tree='eza -T'
 fi
 
 # ls
