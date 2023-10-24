@@ -52,5 +52,8 @@
     }
 ],
 "python.languageServer": "Microsoft",
-"python.defaultInterpreterPath": "/usr/local/bin/python3"
+"python.defaultInterpreterPath": "/usr/local/bin/python3",
+"files.associations": {
+  "*.patch": "diff"
+}
 }
