@@ -3,4 +3,5 @@ fish/generated_completions
 fish/fish_history
 fish/fish_variables
 fish/fishd*
+httpie/version_info.json
 npm/npmrc
