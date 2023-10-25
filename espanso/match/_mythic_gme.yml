@@ -1,0 +1,121 @@
+matches:
+  - regex: ":mfq\\((?P<odds>\\-?[0-4])\\)"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: '"$CONFIG/scripts/mythic" fate-question --odds={{odds}}'
+          trim: false
+  - regex: ":mfq\\((?P<odds>\\-?[0-4]),\\s*(?P<chaos>[1-9])\\)"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: '"$CONFIG/scripts/mythic" fate-question --odds={{odds}} --chaos={{chaos}}'
+          trim: false
+  - regex: ":mef"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: '"$CONFIG/scripts/mythic" event-focus'
+          trim: false
+  - regex: ":mpaef"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: '"$CONFIG/scripts/mythic" event-focus --prepared-adventure'
+          trim: false
+  - regex: ":mma"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: '"$CONFIG/scripts/mythic" meaning actions'
+          trim: false
+  - regex: ":mmd"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: '"$CONFIG/scripts/mythic" meaning descriptions'
+          trim: false
+  - regex: ":mmel"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: '"$CONFIG/scripts/mythic" meaning elements locations'
+          trim: false
+  - regex: ":mmec"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: '"$CONFIG/scripts/mythic" meaning elements characters'
+          trim: false
+  - regex: ":mmeo"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: '"$CONFIG/scripts/mythic" meaning elements objects'
+          trim: false
+  - regex: ":mmen"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: '"$CONFIG/scripts/mythic" meaning elements names'
+          trim: false
+  - regex: ":mst\\(\\)"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: '"$CONFIG/scripts/mythic" scene-test'
+          trim: false
+  - regex: ":mst\\((?P<chaos>[1-9])\\)"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: '"$CONFIG/scripts/mythic" scene-test --chaos={{chaos}}'
+          trim: false
+  - regex: ":mpast\\(\\)"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: '"$CONFIG/scripts/mythic" scene-test --prepared-adventure'
+          trim: false
+  - regex: ":mpast\\((?P<chaos>[1-9])\\)"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: '"$CONFIG/scripts/mythic" scene-test --prepared-adventure --chaos={{chaos}}'
+          trim: false
+  - regex: ":msa"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: '"$CONFIG/scripts/mythic" scene-adjustment'
+          trim: false

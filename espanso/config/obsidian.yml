@@ -1,0 +1,4 @@
+filter_exec: "Obsidian"
+
+extra_includes:
+  - "../match/_mythic_gme.yml"
