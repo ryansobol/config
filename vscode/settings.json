@@ -1,68 +1,47 @@
 {
+  "workbench.startupEditor": "newUntitledFile",
   "telemetry.telemetryLevel": "off",
   "editor.fontSize": 18,
-  "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.insertSpaces": false,
   "editor.tabSize": 2,
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
   "atomKeymap.promptV3Features": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "window.zoomLevel": 1,
+  "editor.formatOnPaste": true,
   "explorer.confirmDragAndDrop": false,
-  "files.autoSave": "onFocusChange",
-  "json.format.enable": false,
+  "[python]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
   "editor.wordWrapColumn": 88,
   "editor.wordWrap": "bounded",
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
-  "terraform.telemetry.enabled": false,
-  "editor.rulers": [
-    88
-  ],
-  "terminal.integrated.fontSize": 18,
-  "java.errors.incompleteClasspath.severity": "ignore",
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/Thumbs.db": true,
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "liveshare.featureSet": "insiders",
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.iconTheme": "material-icon-theme",
-  "material-icon-theme.hidesExplorerArrows": true,
-  "material-icon-theme.folders.theme": "classic",
-  "explorer.openEditors.visible": 0,
-  "diffEditor.renderSideBySide": false,
-  "go.formatTool": "goimports",
-  "go.useLanguageServer": true,
-  "go.buildOnSave": "off",
-  "python.jediEnabled": false,
-  "workbench.colorTheme": "Tomorrow Night Eighties",
   "editor.renderWhitespace": "boundary",
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "python.languageServer": "Pylance",
+  "python.defaultInterpreterPath": "/usr/local/bin/python3",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
+  "files.autoSave": "onFocusChange",
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
   },
-  "python.languageServer": "Microsoft",
-  "python.defaultInterpreterPath": "/usr/local/bin/python3",
-  "files.associations": {
-    "*.patch": "diff"
+  "security.workspace.trust.untrustedFiles": "open",
+  "gremlins.showInProblemPane": true,
+  "editor.bracketPairColorization.enabled": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.accessibilitySupport": "off",
+  "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
+  "workbench.colorTheme": "Tomorrow Night Eighties",
+  "workbench.editor.decorations.colors": false,
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.fontSize": 14,
   "workbench.colorCustomizations": {
     "terminal.background": "#2d2d2d",
     "terminal.foreground": "#e0e0e0",
@@ -84,10 +63,10 @@
     "terminal.ansiYellow": "#ffcc66",
     "terminal.selectionBackground": "#515151"
   },
-  "[html]": {
+  "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[javascript]": {
+  "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
