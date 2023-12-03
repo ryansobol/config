@@ -1,4 +1,12 @@
 matches:
+  - regex: ":mfq\\(\\)"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: '"$CONFIG/scripts/mythic" fate-question'
+          trim: false
   - regex: ":mfq\\((?P<odds>\\-?[0-4])\\)"
     replace: "{{output}}"
     vars:
