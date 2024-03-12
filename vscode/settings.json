@@ -6,14 +6,9 @@
   "editor.insertSpaces": false,
   "editor.tabSize": 2,
   "atomKeymap.promptV3Features": true,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "window.zoomLevel": 1,
+	"editor.multiCursorModifier": "ctrlCmd",
   "editor.formatOnPaste": true,
   "explorer.confirmDragAndDrop": false,
-  "[python]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 4
-  },
   "editor.wordWrapColumn": 88,
   "editor.wordWrap": "bounded",
   "editor.renderWhitespace": "boundary",
@@ -68,5 +63,6 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+},
+"window.zoomLevel": 1
 }
