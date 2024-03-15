@@ -47,5 +47,6 @@
 	helper = osxkeychain
 [core]
 	excludesfile = /Users/ryansobol/.config/git/ignore
+	pager = less -x1,3
 [init]
 	defaultBranch = main
