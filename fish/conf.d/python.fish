@@ -1,3 +1,7 @@
+# Consider trying devbox and direnv
+# https://github.com/cfergeau/devbox
+# https://github.com/direnv/direnv
+
 function _python_install --on-event python_install
   brew install python@3.12
 
