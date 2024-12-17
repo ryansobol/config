@@ -37,44 +37,21 @@ for file in $cursor_user_settings_files
 	ln -s $cursor_user_settings_file_source $cursor_user_settings_file_target
 end
 
-set --local cursor_extensions \
-	766b.go-outliner \
-	anysphere.pyright \
-	biomejs.biome \
-	blodwynn.featurehighlight \
-	bradlc.vscode-tailwindcss \
-	catppuccin.catppuccin-vsc \
-	catppuccin.catppuccin-vsc-icons \
-	dbaeumer.vscode-eslint \
-	editorconfig.editorconfig \
-	eriklynd.json-tools \
-	esbenp.prettier-vscode \
-	etsi0.class-collapse \
-	golang.go \
-	julienetie.vscode-template-literals \
-	kamikillerto.vscode-colorize \
-	lextudio.restructuredtext \
-	mariomatheu.syntax-project-pbxproj \
-	mechatroner.rainbow-csv \
-	meganrogge.template-string-converter \
-	ms-azuretools.vscode-docker \
-	ms-python.debugpy \
-	ms-python.python \
-	ms-python.vscode-pylance \
-	ms-vscode.atom-keybindings \
-	ms-vscode.theme-tomorrowkit \
-	nhoizey.gremlins \
-	oven.bun-vscode \
-	pkief.material-icon-theme \
-	premparihar.gotestexplorer \
-	prisma.prisma \
-	quicktype.quicktype \
-	rangav.vscode-thunder-client \
-	skyapps.fish-vscode \
-	svelte.svelte-vscode \
-	tamasfe.even-better-toml \
-	tomoki1207.pdf \
-	trixnz.go-to-method \
-	vitest.explorer \
-	yoavbls.pretty-ts-errors \
-	yzhang.markdown-all-in-one
+# Get the desired extensions
+set --local cursor_extensions_desired (cat ~/.config/Cursor/extensions.txt)
+
+# Get the installed extensions
+set --local cursor_extensions_installed (cursor --list-extensions)
+
+# Determine the uninstalled extensions
+set --local cursor_extensions_uninstalled
+for ext in $cursor_extensions_desired
+	if not contains $ext $cursor_extensions_installed
+		set --append cursor_extensions_uninstalled $ext
+	end
+end
+
+# Install the uninstalled extensions
+for extension in $cursor_extensions_uninstalled
+	cursor --install-extension $extension
+end
