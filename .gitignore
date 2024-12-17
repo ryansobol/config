@@ -1,6 +1,7 @@
 configstore
 fish/generated_completions
 fish/fish_history
+fish/fish_plugins
 fish/fish_variables
 fish/fishd*
 httpie/version_info.json
