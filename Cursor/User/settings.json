@@ -1,0 +1,127 @@
+{
+  "telemetry.telemetryLevel": "off",
+  "editor.fontSize": 16,
+  "workbench.iconTheme": "catppuccin-mocha",
+  "editor.insertSpaces": false,
+  "editor.tabSize": 2,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.wordWrap": "bounded",
+  "editor.renderWhitespace": "boundary",
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "files.autoSave": "onFocusChange",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "gremlins.showInProblemPane": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.accessibilitySupport": "off",
+  "editor.fontFamily": "SF Mono, Menlo, Meslo LG M, Monaco, 'Courier New', monospace",
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.editor.decorations.colors": false,
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.fontSize": 18,
+  "workbench.colorCustomizations": {
+    // "terminal.background": "#2d2d2d",
+    // "terminal.foreground": "#e0e0e0",
+    // "terminal.ansiBlack": "#2d2d2d",
+    // "terminal.ansiBrightBlack": "#747369",
+    // "terminal.ansiBrightBlue": "#6699cc",
+    // "terminal.ansiBrightCyan": "#66cccc",
+    // "terminal.ansiBrightGreen": "#99cc99",
+    // "terminal.ansiBrightMagenta": "#cc99cc",
+    // "terminal.ansiBrightRed": "#f2777a",
+    // "terminal.ansiBrightWhite": "#e0e0e0",
+    // "terminal.ansiBrightYellow": "#ffcc66",
+    // "terminal.ansiBlue": "#6699cc",
+    // "terminal.ansiCyan": "#66cccc",
+    // "terminal.ansiGreen": "#99cc99",
+    // "terminal.ansiMagenta": "#cc99cc",
+    // "terminal.ansiRed": "#f2777a",
+    // "terminal.ansiWhite": "#d2d0c8",
+    // "terminal.ansiYellow": "#ffcc66",
+    // "terminal.selectionBackground": "#515151"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[tailwindcss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "editor.wordWrapColumn": 100,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "colorize.languages": ["javascript", "svelte"],
+  "explorer.confirmDelete": false,
+  "workbench.editor.labelFormat": "short",
+  "explorer.sortOrder": "filesFirst",
+  "workbench.tree.indent": 12,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.biome": "explicit",
+    "quickfix.biome": "explicit"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+  "window.newWindowProfile": "Default",
+  "cursor.cmdk.useThemedDiffBackground": true,
+  "workbench.activityBar.orientation": "vertical",
+  "cursor.cpp.enablePartialAccepts": true,
+  "cursor.chat.narrowScrollbar": false,
+  "cursor.chat.showPremiumChatHistory": false,
+  "cursor.chat.showSuggestedFiles": true,
+  "editor.snippetSuggestions": "top",
+  "editor.linkedEditing": true,
+  "catppuccin.accentColor": "blue",
+  "catppuccin.bracketMode": "dimmed",
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.includeLanguages": {
+    "svelte": "html"
+  },
+  "template-string-converter.addBracketsToProps": true,
+  "template-string-converter.autoRemoveTemplateString": true,
+  "template-string-converter.convertOutermostQuotes": true,
+  "biome.enabled": false,
+  "svelte.plugin.svelte.defaultScriptLanguage": "ts",
+  "window.zoomLevel": 0.5,
+  "editor.mouseWheelZoom": true,
+  "svelte.enable-ts-plugin": true,
+  "class-collapse.functionality.enable": false
+}
