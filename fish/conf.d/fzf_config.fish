@@ -1,8 +1,8 @@
-function __configure_fzf --on-event fzf_install
-	if not status is-interactive
-		return
-	end
+if not status is-interactive
+	exit
+end
 
+function __configure_fzf --on-event fzf_install
 	if command --query fzf
 		__set_fzf_default_options
 
