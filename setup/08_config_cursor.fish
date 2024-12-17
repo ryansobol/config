@@ -43,15 +43,9 @@ set --local cursor_extensions_desired (cat ~/.config/Cursor/extensions.txt)
 # Get the installed extensions
 set --local cursor_extensions_installed (cursor --list-extensions)
 
-# Determine the uninstalled extensions
-set --local cursor_extensions_uninstalled
+# Install the desired extensions
 for ext in $cursor_extensions_desired
 	if not contains $ext $cursor_extensions_installed
-		set --append cursor_extensions_uninstalled $ext
+		cursor --install-extension $ext
 	end
-end
-
-# Install the uninstalled extensions
-for extension in $cursor_extensions_uninstalled
-	cursor --install-extension $extension
 end
