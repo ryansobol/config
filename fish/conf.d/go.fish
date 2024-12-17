@@ -1,3 +1,7 @@
+# Consider trying devbox and direnv
+# https://github.com/cfergeau/devbox
+# https://github.com/direnv/direnv
+
 function _go_install --on-event go_install
 	brew install go
 
