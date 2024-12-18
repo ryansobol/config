@@ -1,8 +1,9 @@
 configstore
-fish/generated_completions
+fish/config.fish
 fish/fish_history
 fish/fish_plugins
 fish/fish_variables
 fish/fishd*
+fish/generated_completions
 httpie/version_info.json
 npm/npmrc
