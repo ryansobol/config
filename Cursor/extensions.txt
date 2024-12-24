@@ -11,3 +11,4 @@ tomoki1207.pdf
 yzhang.markdown-all-in-one
 nhoizey.gremlins
 skyapps.fish-vscode
+jetify.devbox
