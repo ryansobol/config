@@ -4,10 +4,8 @@ julienetie.vscode-template-literals
 mechatroner.rainbow-csv
 meganrogge.template-string-converter
 ms-vscode.atom-keybindings
-ms-vscode.theme-tomorrowkit
 tamasfe.even-better-toml
 tomoki1207.pdf
 yzhang.markdown-all-in-one
 nhoizey.gremlins
-skyapps.fish-vscode
 jetify.devbox
