@@ -1,6 +1,5 @@
 catppuccin.catppuccin-vsc
 catppuccin.catppuccin-vsc-icons
-editorconfig.editorconfig
 julienetie.vscode-template-literals
 mechatroner.rainbow-csv
 meganrogge.template-string-converter
