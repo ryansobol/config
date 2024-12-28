@@ -7,3 +7,4 @@ fish/fishd*
 fish/generated_completions
 httpie/version_info.json
 npm/npmrc
+raycast/config.json

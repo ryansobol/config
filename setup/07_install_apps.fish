@@ -8,7 +8,8 @@ set --local apps \
 	firefox@developer-edition \
 	google-chrome@dev \
 	elgato-camera-hub \
-	elgato-control-center
+	elgato-control-center \
+	raycast
 
 # Get currently installed apps
 set --local installed_apps (brew list --cask)
