@@ -9,6 +9,7 @@ set --local apps \
 	google-chrome@dev \
 	elgato-camera-hub \
 	elgato-control-center \
+	ghostty \
 	raycast
 
 # Get currently installed apps
