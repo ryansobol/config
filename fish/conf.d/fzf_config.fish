@@ -31,7 +31,13 @@ function __set_fzf_fish_bindings
 	# Ctrl+P : Show processes
 	# Ctrl+V : Show variables
 	# Ctrl+R : Show history
-	fzf_configure_bindings --directory=\cf --git_log=\cl --git_status=\cs --processes=\cp --variables=\cv --history=\cr
+	fzf_configure_bindings \
+		--directory=\cf \
+		# --git_log=\cl \
+		--git_status=\cs \
+		--processes=\cp \
+		--variables=\cv \
+		--history=\cr
 end
 
 function __set_fzf_fish_eza_options
