@@ -3,6 +3,7 @@
 # List of apps to install
 set --local apps \
 	1password \
+	bartender \
 	cursor \
 	elgato-camera-hub \
 	elgato-control-center \
