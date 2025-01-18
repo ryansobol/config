@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-set --local utils bat eza fd fzf git
+set --local utils bat eza fd fzf git ripgrep
 
 for util in $utils
 	# check if a utility is NOT available in the current shell's path
