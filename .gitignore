@@ -8,4 +8,5 @@ fish/generated_completions
 httpie/version_info.json
 npm/npmrc
 raycast/config.json
+raycast/extensions/
 asciinema/install-id
