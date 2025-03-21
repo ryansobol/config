@@ -1,0 +1,28 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+	"telemetry": {
+		"metrics": false,
+		"diagnostics": false
+	},
+	"base_keymap": "Atom",
+	"buffer_font_family": "SFMono Nerd Font",
+	"buffer_font_size": 18,
+	"hard_tabs": true,
+	"icon_theme": "Catppuccin Mocha",
+	"show_whitespaces": "boundary",
+	"tab_size": 2,
+	"theme": {
+		"mode": "system",
+		"light": "One Light",
+		"dark": "Catppuccin Mocha - No Italics"
+	},
+	"ui_font_family": ".SystemUIFont",
+	"ui_font_size": 18
+}
