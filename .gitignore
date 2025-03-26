@@ -7,6 +7,7 @@ fish/fishd*
 fish/generated_completions
 httpie/version_info.json
 npm/npmrc
+op/
 raycast/config.json
 raycast/extensions/
 asciinema/install-id
