@@ -1,6 +1,7 @@
 matches:
   - regex: ":mfq\\(\\)"
     replace: "{{output}}"
+    label: Mythic Fate Question
     vars:
       - name: output
         type: shell
@@ -9,6 +10,7 @@ matches:
           trim: false
   - regex: ":mfq\\((?P<odds>\\-?[0-4])\\)"
     replace: "{{output}}"
+    label: Mythic Fate Question (Odds)
     vars:
       - name: output
         type: shell
@@ -17,6 +19,7 @@ matches:
           trim: false
   - regex: ":mfq\\((?P<odds>\\-?[0-4]),\\s*(?P<chaos>[1-9])\\)"
     replace: "{{output}}"
+    label: Mythic Fate Question (Odds, Chaos)
     vars:
       - name: output
         type: shell
@@ -25,6 +28,7 @@ matches:
           trim: false
   - regex: ":mef"
     replace: "{{output}}"
+    label: Mythic Event Focus
     vars:
       - name: output
         type: shell
@@ -33,6 +37,7 @@ matches:
           trim: false
   - regex: ":mpaef"
     replace: "{{output}}"
+    label: Mythic Event Focus (Prepared Adventure)
     vars:
       - name: output
         type: shell
@@ -41,6 +46,7 @@ matches:
           trim: false
   - regex: ":mma"
     replace: "{{output}}"
+    label: Mythic Meaning - Actions
     vars:
       - name: output
         type: shell
@@ -49,6 +55,7 @@ matches:
           trim: false
   - regex: ":mmd"
     replace: "{{output}}"
+    label: Mythic Meaning - Descriptions
     vars:
       - name: output
         type: shell
@@ -57,6 +64,7 @@ matches:
           trim: false
   - regex: ":mmel"
     replace: "{{output}}"
+    label: Mythic Meaning - Elements - Locations
     vars:
       - name: output
         type: shell
@@ -65,6 +73,7 @@ matches:
           trim: false
   - regex: ":mmec"
     replace: "{{output}}"
+    label: Mythic Meaning - Elements - Characters
     vars:
       - name: output
         type: shell
@@ -73,6 +82,7 @@ matches:
           trim: false
   - regex: ":mmeo"
     replace: "{{output}}"
+    label: Mythic Meaning - Elements - Objects
     vars:
       - name: output
         type: shell
@@ -81,6 +91,7 @@ matches:
           trim: false
   - regex: ":mmen"
     replace: "{{output}}"
+    label: Mythic Meaning - Elements - Names
     vars:
       - name: output
         type: shell
@@ -89,6 +100,7 @@ matches:
           trim: false
   - regex: ":mst\\(\\)"
     replace: "{{output}}"
+    label: Mythic Scene Test
     vars:
       - name: output
         type: shell
@@ -97,6 +109,7 @@ matches:
           trim: false
   - regex: ":mst\\((?P<chaos>[1-9])\\)"
     replace: "{{output}}"
+    label: Mythic Scene Test (Chaos)
     vars:
       - name: output
         type: shell
@@ -105,6 +118,7 @@ matches:
           trim: false
   - regex: ":mpast\\(\\)"
     replace: "{{output}}"
+    label: Mythic Scene Test (Prepared Adventure)
     vars:
       - name: output
         type: shell
@@ -113,6 +127,7 @@ matches:
           trim: false
   - regex: ":mpast\\((?P<chaos>[1-9])\\)"
     replace: "{{output}}"
+    label: Mythic Scene Test (Prepared Adventure, Chaos)
     vars:
       - name: output
         type: shell
@@ -121,6 +136,7 @@ matches:
           trim: false
   - regex: ":msa"
     replace: "{{output}}"
+    label: Mythic Scene Adjustment
     vars:
       - name: output
         type: shell
