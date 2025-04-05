@@ -18,6 +18,16 @@
 # You can also disable the toggle key completely with
 # toggle_key: OFF
 
+# --- Search Shortcut
+
+# Customize the key used to open the search bar
+# Supported keys: ALT, CTRL, CMD, SHIFT, ENTER, TAB, SPACE, etc...
+# You can customize the search shortcut by specifying keys separated by a plus sign, e.g.
+# Default option: ALT+Space (Option + Space on macOS)
+# search_shortcut: ALT+Space
+# You can also disable the shortcut entirely by adding:
+search_shortcut: off
+
 # --- Injection Backend
 
 # Espanso supports multiple ways of injecting text into applications. Each of
