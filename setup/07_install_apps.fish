@@ -7,6 +7,7 @@ set --local apps \
 	cursor \
 	elgato-camera-hub \
 	elgato-control-center \
+	espanso \
 	firefox@developer-edition \
 	ghostty \
 	google-chrome@dev \
