@@ -98,6 +98,15 @@ matches:
         params:
           cmd: '"$CONFIG/scripts/mythic" meaning elements names'
           trim: false
+  - regex: ":mmea"
+    replace: "{{output}}"
+    label: Mythic Meaning - Elements - Adventure Tones
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: '"$CONFIG/scripts/mythic" meaning elements adventure-tones'
+          trim: false
   - regex: ":mmev"
     replace: "{{output}}"
     label: Mythic Meaning - Elements - Character Conversations
