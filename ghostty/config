@@ -1,5 +1,5 @@
 font-family = SFMono Nerd Font
 font-size = 18
-theme = catppuccin-mocha
+theme = catppuccin-mocha.conf
 keybind = super+alt+right=next_tab
 keybind = super+alt+left=previous_tab
